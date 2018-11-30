@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".InfoActivity">
 
     <TextView
         android:id="@+id/details_activity_label"
@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="96dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/main_activity_label"
+        android:layout_marginEnd="7dp"
+        android:text="@string/info_activity_label"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,43 +21,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/root_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="@string/root_label"
-        android:textColor="@color/colorPrimary"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/details_activity_label"
-        app:layout_constraintTop_toBottomOf="@+id/details_activity_label" />
-
-    <TextView
         android:id="@+id/last_activity_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/next_activity_label"
+        android:text="@string/last_activity_label"
         android:textAllCaps="false"
         android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/root_label" />
+        app:layout_constraintTop_toBottomOf="@+id/details_activity_label" />
 
     <Button
-        android:id="@+id/splash_activity_button"
+        android:id="@+id/close_all_except_root_button"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="0dp"
+        android:layout_width="376dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/splash_activity_button"
+        android:text="@string/close_all_except_root_button"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/last_activity_label" />
 
